@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">EstimateX</string>
+    <string name="sample">
+        5.0269,    -2.6807;\n
+        5.0365,    5.7014;\n
+        5.0546,    3.8166;\n
+        5.0594,    2.8214;\n
+        5.0702,    5.1337;\n
+        5.1077,    2.0576;\n
+        5.1301,    0.5608;\n
+        5.1793,    -0.7428;\n
+        5.1884,    0.2042;\n
+        5.2524,    -1.2200;\n
+        5.3054,    1.9869;\n
+        5.3077,    1.8396;\n
+        5.3794,    3.5129;\n
+        5.4069,    0.5566;\n
+        5.4369,    0.6170;\n
+        5.4901,    4.2630;\n
+        5.4994,    1.0173;\n
+        5.5204,    0.1520;\n
+        5.5277,    9.1302;\n
+        5.5416,    1.0179;\n
+        5.5649,    3.0825;\n
+        5.6063,    3.3928;\n
+        5.6397,    4.6042;\n
+        5.6407,    0.7162;\n
+        5.7077,    1.8451;\n
+        5.7107,    3.2522;\n
+        5.7292,    0.4795;\n
+        5.7340,    3.1551;\n
+        5.7737,    2.4406;\n
+        5.8014,    1.8440;\n
+        5.8598,    6.8233;\n
+        5.8707,    7.2029;\n
+        5.8918,    1.8495;\n
+        6.0020,    0.9270;\n
+        6.0062,    1.2784;\n
+        6.1101,    17.5920;\n
+        6.1891,    3.1386;\n
+        6.2742,    2.4756;\n
+        6.3261,    5.1875;\n
+        6.3328,    1.4233;\n
+        6.3534,    5.4974;\n
+        6.3557,    0.6786;\n
+        6.3589,    -1.4211;\n
+        6.3654,    5.3048;\n
+        6.4296,    3.6518;\n
+        6.4862,    6.5987;\n
+        6.5159,    5.3436;\n
+        6.5479,    0.2968;\n
+        6.5894,    5.9966;\n
+        6.8825,    3.9115;\n
+        7.0032,    11.8540;\n
+        7.0708,    5.3893;\n
+        7.0931,    1.0463;\n
+        7.2182,    4.8852;\n
+        7.2259,    3.3411;\n
+        7.3345,    4.0259;\n
+        7.4239,    4.2885;\n
+        7.4764,    4.3483;\n
+        7.5386,    3.8845;\n
+        7.5402,    6.7504;\n
+        7.6031,    4.9981;\n
+        7.6366,    4.2959;\n
+        7.8247,    6.7318;\n
+        7.9334,    4.5623;\n
+        8.0959,    4.1164;\n
+        8.2111,    6.5426;\n
+        8.2934,    0.1445;\n
+        8.2951,    5.7442;\n
+        8.3829,    11.8860;\n
+        8.4084,    7.2258;\n
+        8.5172,    4.2415;\n
+        8.5186,    13.6620;\n
+        8.5781,    12.0000;\n
+        8.8254,    5.1694;\n
+        9.1802,    6.7981;\n
+        9.2482,    12.1340;\n
+        9.3102,    3.9624;\n
+        9.4536,    5.4141;\n
+        9.7687,    7.5435;\n
+        10.1360,   6.6799;\n
+        10.2360,   7.7754;\n
+        10.2740,   6.7526;\n
+        10.9570,   7.0467;\n
+        11.7000,   8.0043;\n
+        11.7080,   5.3854;\n
+        12.8280,   13.5010;\n
+        12.8360,   10.1170;\n
+        13.1760,   14.6920;\n
+        13.3940,   9.0551;\n
+        14.1640,   15.5050;\n
+        14.9080,   12.0540;\n
+        18.9450,   22.6380;\n
+        18.9590,   17.0540;\n
+        20.2700,   21.7670;\n
+        20.3410,   20.9920;\n
+        21.2790,   17.9290;\n
+        22.2030,   24.1470;
+    </string>
+    <string name="manual">
+        EstimateX is used to train the machine to generate a hypothesis on the basis of a given training set. This hypothesis will help you to estimate the desired entity for any set of parameters.
+        \n\nFor example, if you want to sell a particular house in a city, but before selling it you want to estimate the price of this house in order to avoid attaining a loss.
+        \nLet us assume that the price of a house depends only on it\'s area (size). Hence you need to provide a data set (training set) consisting of sizes of some random houses in the city along with their respective prices to the machine.
+        \n\nThe input-format of training set for this application is as follows :
+        \nparameter1,parameter2,....,parameterN,trainingValue1;
+        \nparameter1,parameter2,....,parameterN,trainingValue2;
+        \n.\n.\n.
+        \nparameter1,parameter2,....,parameterN,trainingValueM;
+        \n\nHere let us consider 3 training examples to estimate the price of our house :
+        \n\n 100,2500000;
+        \n 200,4500000;
+        \n 250,5500000;
+        \n\n Inorder to estimate a value corresponding to certain parameters after providing the training set, you need to input those parameters in this application as follows:
+        \n\n parameter1,parameter2,....,parameterN;
+        \n\n Here let us consider the size of our house to be 150. As our estimation is only based on a single parameter, our input to the machine will be as follows :
+        \n\n150;
+        \n\nAfter proving the training set and estimation parameters, you need to set the power of this estimation. Power of the estimation will be the degree of your hypothesis.
+        \n\n Note : HIGH VALUE OF POWER GIVES RISE TO THE PROBLEM OF \'OVERFITTING\'. HENCE, KEEPING THE VALUE OF POWER LESS THAN 4 IS RECOMMENDED. THE DEFAULT VALUE IS 1 (LINEAR HYPOTHESIS).
+        \n\n After setting the power of estimation, in order to let machine generate a hypothesis for your estimation, you need to click ESTIMATE button.
+        \n Doing this you will see the estimated value on your screen.
+        \n\n If your training set comprises of only one parameter (same as in this example), you can plot your hypothesis as well as training example on a cartesian plane by clicking on the PLOT HYPOTHESIS button.
+
+        \n\n IMPORTANT INSTRUCTIONS
+        \n\n 1) Strictly follow the input format mentioned above for both training set as well as estimation parameters or the application may not function properly.
+        \n\n 2) Do not miss any commas (,) or semi-colons (;) while providing the input to the machine.
+        \n\n 3) All the inputs strictly have to be numeric. Do not use any other character in your inputs. Or it may cause the application to malfunction.
+        \n\n 4) Try to avoid using high values of power of estimation.
+    </string>
+
+    <string-array name="powerChoices">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+
+</resources>

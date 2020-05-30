@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Application Manual"
+        android:id="@+id/manual"
+        app:showAsAction="never"/>
+
+    <item android:title="Sample Training Set"
+        android:id="@+id/sample"
+        app:showAsAction="never"/>
+
+    <item android:title="Developer Contact"
+        android:id="@+id/developer"
+        app:showAsAction="never"/>
+
+</menu>

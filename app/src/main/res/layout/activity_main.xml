@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/trainingSet"
+        android:gravity="top"
+        android:hint="Please enter your training set here in the format mentioned in the application manual. \nDo not miss any ',' or ';' while entering the input."
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Power of estimation : "/>
+        <Spinner
+            android:id="@+id/power"
+            android:entries="@array/powerChoices"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/testCase"
+            android:gravity="top"
+            android:hint="Please enter the set of parameters/query (if any) here in the format mentioned in the application manual."
+            android:layout_width="match_parent"
+            android:layout_height="90dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/hypothesis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hypothesis : "
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/estimatedValue"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimated Value : "
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/estimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="estimate"/>
+
+    <Button
+        android:id="@+id/plot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Plot Hypothesis"/>
+
+
+</LinearLayout>

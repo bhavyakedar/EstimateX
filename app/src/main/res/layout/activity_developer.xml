@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeveloperActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Bhavya Kedar"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:text="Email : 201901028@daiict.ac.in"
+        android:autoLink="email"
+        android:textColorLink="#00f"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:text="GitHub : www.github.com/bhavyakedar"
+        android:autoLink="web"
+        android:textColorLink="#00f"/>
+
+</LinearLayout>
